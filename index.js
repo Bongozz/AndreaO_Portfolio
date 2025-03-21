@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 miniMe.addEventListener("click", event =>{
     miniMe.src = 'https://piskel-imgstore-b.appspot.com/img/beceaab3-05e6-11f0-a390-adb355fe7ec4.gif';
     setTimeout(() => {
-        miniMe.src = 'ihttps://piskel-imgstore-b.appspot.com/img/d8614335-05e6-11f0-a472-adb355fe7ec4.gif';
+        miniMe.src = 'https://piskel-imgstore-b.appspot.com/img/d8614335-05e6-11f0-a472-adb355fe7ec4.gif';
     }, 400);
 });
 
