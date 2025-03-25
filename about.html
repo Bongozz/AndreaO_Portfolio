@@ -43,6 +43,12 @@
             max-width: 800px;
         }
 
+        .content-wrapper {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
         .container {
             display: flex;
             flex-direction: row;
@@ -77,6 +83,10 @@
             border-bottom: 2px dotted #5D1838;
         }
 
+        .iframe-right {
+            flex-shrink: 0;
+        }
+
         a {
             text-decoration: none;
             color: #903643;
@@ -90,11 +100,15 @@
             .container {
                 flex-direction: column;
             }
+            .content-wrapper {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
     <div class="sidenav">
+        <a href="index.html">Home</a>
         <a href="about.html">About me!</a>
         <a href="glitch.html">Glitch art</a>
         <a href="meme.html">Meme Mashup</a>
@@ -107,15 +121,20 @@
 
     <div class="main">
         <h2 class="headers">About Me</h2>
-        <div class="container">
-            <div class="imgwrapper">
-                <img class="img" src="https://i.imgur.com/AlqEHuX.png">
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="imgwrapper">
+                    <img class="img" src="https://i.imgur.com/AlqEHuX.png">
+                </div>
+                <div class="content">
+                     <p> Hello! My mine is Andrea O. and I'm a first year at SJSU</p>
+                <p>I like to dabble in all sorts of diffrent forms of art! </p>
+                <p> My ultimate goal is to one day  make a game! I hope you enjoy your time here! Feel free to click around to learn about my intrests and interact with ham ♡!!</p>
             </div>
-            <div class="content">
-                <p><b>ME!!</b>: Hello! My mine is Andrea O. and I'm a first year at SJSU</p>
-                <p>I like to dabble in all sorts of diffrent forms of art! My ultimate goal is to make a game ♡</p>
-                <p> My ultimate goal is to one day  make a game! I hope you enjoy your time here! ♡</p>
-            </div>
+            <iframe class="iframe-right" width="314" height="321" scrolling="no" 
+                src="https://gifypet.neocities.org/pet/pet.html?name=Ham&dob=1742880755&gender=b&element=Earth&pet=ozwomp.gif&map=night.gif&background=1995.png&tablecolor=black&textcolor=black" 
+                frameborder="0">
+            </iframe>
         </div>
     </div>
 </body>
