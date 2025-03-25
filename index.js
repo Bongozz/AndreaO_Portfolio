@@ -27,7 +27,7 @@ menuTitle.addEventListener("click", event =>{
 
 for (let i = 0; i < menuLink.length; i++) {
     menuLink[i].addEventListener("mouseover", event => {
-        miniMe.src = 'https://piskel-imgstore-b.appspot.com/img/f627577a-05e6-11f0-bac0-adb355fe7ec4.gif';
+        miniMe.src = 'https://piskel-imgstore-b.appspot.com/img/6b0e6fae-0936-11f0-a18b-117ed27876b8.gif';
     });
 
     menuLink[i].addEventListener("mouseout", event => {
