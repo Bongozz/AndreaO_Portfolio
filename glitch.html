@@ -37,6 +37,44 @@
                 margin-left: 220px;
                 padding: 20px;
             }
+
+            #containerGal {
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+            }
+
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
+                max-width: 1000px;
+            }
+
+            .frame {
+                background: #222;
+                padding: 10px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            .frame img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .frame img:hover {
+                transform: scale(1.05);
+            }
+
+            .desc {
+                color: white;
+                font-size: 14px;
+                padding-top: 10px;
+            }
         </style>
     </head>
     <body>
@@ -59,33 +97,26 @@
 
             <div id="containerGal">
                 <div class="gallery">
-                    <div class="column">
-                        <div class="frame">
-                            <a target="_blank">
-                                <img src="perfect_blue_glitchhhyyy2.png" alt="Armand and Marius Digital Painting">
-                            </a>
-                            <div class="desc">Mima from Perfect Blue decent into madness. <i>Glitched the echo effect in audacity </i></div>
-                        </div>
-                        <div class="frame">
-                            <a target="_blank">
-                                <img src="textglitch.png" alt="Chaz and Kalea Illustration">
-                            </a>
-                            <div class="desc">Scene is from the end of the movie when the plot twist is revealed, <i>I wanted to show the glitch in almost a sinister mood. </i> <i> Glitched by adding multiple lines of random text to the code on Notepad ++</i></div>
-                        </div>
+                    <div class="frame">
+                        <a target="_blank">
+                            <img src="perfect_blue_glitchhhyyy2.png" alt="Armand and Marius Digital Painting">
+                        </a>
+                        <div class="desc">Mima from Perfect Blue decent into madness. <i>Glitched the echo effect in audacity </i></div>
                     </div>
-                    <div class="column">
-                        <div class="frame">
-                            <a target="_blank">
-                                <img src="mimayaya_wartttttt2.png" alt="Tillman Henderson Trading Card">
-                            </a>
-                            <div class="desc">Scene from the beginning of the movie when Mima was performing, <i> and then this guy in the crowd puts his hand out so that from his perspective she is dancing in his hand.</i> <i> I wanted to show the ill intent this man had with Mima</i><i> Glitched using the echo effect in audacity with the effect level at 1</i></div>
-                        </div>
-        
-                        </div>
+                    <div class="frame">
+                        <a target="_blank">
+                            <img src="textglitch.png" alt="Chaz and Kalea Illustration">
+                        </a>
+                        <div class="desc">Scene is from the end of the movie when the plot twist is revealed, <i>I wanted to show the glitch in almost a sinister mood. </i> <i> Glitched by adding multiple lines of random text to the code on Notepad ++</i></div>
+                    </div>
+                    <div class="frame">
+                        <a target="_blank">
+                            <img src="mimayaya_wartttttt2.png" alt="Tillman Henderson Trading Card">
+                        </a>
+                        <div class="desc">Scene from the beginning of the movie when Mima was performing, <i> and then this guy in the crowd puts his hand out so that from his perspective she is dancing in his hand.</i> <i> I wanted to show the ill intent this man had with Mima</i><i> Glitched using the echo effect in audacity with the effect level at 1</i></div>
                     </div>
                 </div>
             </div>
         </div>
     </body>
 </html>
-
