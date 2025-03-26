@@ -1,0 +1,447 @@
+:root {
+    --black: #121216 ;
+    --yellow: #d3c9a1;
+    --green: #9ec16b;
+    --brightgreen: #b7df8a;
+    --blue: #44514C;
+}
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    scrollbar-color: var(--yellow);
+    -ms-overflow-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*fonts*/
+@font-face {
+    font-family: 'Azeret Bold';
+    src: url('/_fonts/AzeretMono~/azeretmono-bold-webfont.woff2') format('woff2'),
+         url('/_fonts/AzeretMono~/azeretmono-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Azeret Bold Italic';
+    src: url('/_fonts/AzeretMono~/azeretmono-bolditalic-webfont.woff2') format('woff2'),
+         url('/_fonts/AzeretMono~/azeretmono-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Azeret Regular';
+    src: url('/_fonts/AzeretMono~/azeretmono-regular-webfont.woff2') format('woff2'),
+         url('/_fonts/AzeretMono~/azeretmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Azeret Italic';
+    src: url('/_fonts/AzeretMono~/azeretmono-regularitalic-webfont.woff2') format('woff2'),
+         url('/_fonts/AzeretMono~/azeretmono-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'WonderType';
+    src: url('/_fonts/WonderTypeKit/wondertype-regular-webfont.woff2') format('woff2'),
+         url('/_fonts/WonderTypeKit/wondertype-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*root style*/
+h1 {
+    font-family: 'WonderType', monospace;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 a {
+    text-decoration: none;
+    color:var(--yellow)
+}
+
+h2 {
+    font-family: 'Azeret Italic', monospace;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h3 {
+    font-family: 'Azeret Italic', monospace;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    color:var(--brightgreen)  
+}
+
+i {
+    font-family: 'Azeret Italic', monospace;
+    font-weight: normal;
+    font-style: normal;
+}
+
+b {
+    font-family: 'Azeret Bold', monospace;
+    font-weight: normal;
+    font-style: normal;
+    background-color: var(--green);
+    color:var(--black);
+    padding:.1%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+    color: var(--yellow);
+    text-emphasis-color: var(--brightgreen);
+    font-family: "Azeret Regular", monospace;
+    font-size: 14px;
+    line-height: 1.3em;
+}
+
+/*layout*/
+
+header {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: "Azeret Regular", monospace;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom:4%;
+  }
+
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100vw;
+    width: fit-content;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    padding: 15px;
+    gap: 15px 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+main {
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+}
+
+.center, .other {
+    flex: 1 1 400px;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+.center {
+    display: flex;
+    border: none;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+.center img {
+    display: flex;
+    width: 80%;
+    max-width: 400px;
+    min-width: 100px;
+    height: auto;
+    margin: auto;
+}
+
+.center-left{
+    display: flex;
+    margin: 2%;
+    max-width: 40%;
+}
+
+.center-left img{
+    float:left;
+    width:100%;
+    min-width: 350px;
+    max-width: 550px;
+}
+
+.center-right{
+    display: inline-block;
+    text-align: justify;
+    margin: 2%;
+    max-width:50%;
+}
+
+.center::after {
+    content: ' ';
+    display: table;
+    clear: both; 
+}
+
+.child:hover {
+    transform: scale(1.2);
+}
+
+.other {
+    border: solid 2px;
+    border-color: var(--yellow);
+    border-radius: 5px;
+    padding: 5px 20px;
+    flex-flow: column wrap;
+}
+
+.other img {
+    width: 150px;
+    height: 20px;
+}
+
+.contact {
+    text-align: center; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+
+.greeting {
+    font-family: 'Azeret Bold Italic', monospace;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--black);
+    background-color: var(--yellow);
+    text-align: center;
+    font-size: 16px;
+    border: solid 1px;
+    border-color: var(--yellow);
+    border-radius: 3px;
+    margin-top: 1%;
+}
+
+aside, nav, .social {
+    flex: 0 2 180px;
+    max-width: 400px;
+}
+
+aside, .aside-right {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+}
+
+aside {
+    flex-flow: column nowrap;
+    border: solid 2px;
+    border-color: var(--green);
+    border-radius: 5px;
+    padding: 15px;
+    max-height: 80vh;
+}
+
+.social, nav {
+    border: none;
+}
+
+.social {
+    flex-flow: row;
+    padding-top: 5%;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.6em;
+}
+
+.social a {
+    color:var(--yellow)
+}
+
+.social a:hover {
+    color: var(--green);
+    cursor: pointer;
+}
+
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+}
+
+.aside-right, .updates, .buttons {
+    flex: 0 2 250px;
+    max-width: 600px;
+}
+
+.aside-right {
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    border: none;
+    padding: 15px;
+    max-height: 80vh;
+}
+
+.updates {
+    border: solid 2px;
+    border-color: var(--green);
+    border-radius: 3px;
+    overflow-y: scroll;
+    padding: 2px 8px;
+    max-height: 30%;
+    font-size: 11px;
+    transform: rotate(3deg);
+}
+
+.updates h3 {
+    font-family: "Azeret Bold Italic", monospace;
+    font-size: 1.2em;
+    color: var(--brightgreen);
+    text-align: left;
+    padding: none;
+}
+
+.updates h6{
+    display: inline;
+    font-family: "Azeret Italic", monospace;
+    font-size: 1.1em;
+    color: var(--green);
+    text-align: left;
+    padding-right: 3px;
+}
+
+.buttons {
+    border: solid 2px;
+    border-color: var(--green);
+    border-radius: 3px;
+    padding: 10px;
+    max-height: fit-content;
+    transform: rotate(-2deg);
+}
+
+.buttons img{
+    width: 88px;
+    height: 31px;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer img {
+    width: 120px;
+    padding-bottom: 3%;
+}
+
+footer .social {
+    font-size:1.2em;
+}
+
+/*navigation*/
+nav {
+    flex-flow:column;
+    align-items: stretch;
+    align-self: center;
+    max-width: 100%;
+    text-align: justify;
+    margin-left: 2;
+    line-height: 1.4em;
+}
+
+nav a {
+    color: var(--brightgreen);
+    text-align: left;
+    width: auto;
+}
+
+nav a:hover {
+    background: var(--yellow);
+    color: var(--black);
+    font-style: bold;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: none;
+}
+
+ul li::before {
+    content: "â†³";
+    padding-right: 12px;
+}
+
+/*other*/
+a {
+    color: var(--brightgreen);
+    font-style: bold;
+}
+
+.active {
+    color: var(--yellow);
+    text-decoration: none;
+    font-family: 'Azeret Bold Italic', monospace;
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (max-width: 1200px) {
+    #container {
+        flex: 100%;
+      width: fit-content;
+    }
+    
+    main, .aside-right {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+.other {
+    margin-left: 5%;
+    margin-right:5%;
+}
+
+    aside {
+        min-height: 30vw;
+        margin-bottom: 15%;
+    }
+    
+  }
+@media screen and (max-width: 1000px) {
+    aside {
+        min-height: 60vw;
+    }
+
+    .aside-right {
+        min-width:60vw;
+    }
+  }
