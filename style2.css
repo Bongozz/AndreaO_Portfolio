@@ -1,0 +1,250 @@
+html {
+  height: 95vh;
+}
+
+body {
+  height: 100vh;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 40px;
+  background-color: #AFC27D
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*align-items: center;*/
+  align-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+}
+
+.topline {
+  align-content: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.imgScreen {
+  justify-content: center;
+  max-width: 800px;
+  height: auto;
+  background-color: #E2F9B8;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+@media screen and (max-width: 750px){
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .imgScreen {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+
+.thmbWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+}
+
+.thumbnail {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  margin: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle:hover{
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  height: 70px;
+  border-radius: 15px 15px 15px 15px;
+  background-image: linear-gradient(to right top, #313715, #628395);
+  margin: 8px;
+  font-family: 'Quicksand', sans-serif;
+  color: #E2F9B8;
+  font-size: 25px;
+  overflow: hidden;
+  border: 0;
+}
+
+@keyframes peek {
+  0%   {height: 75px;}
+  25%  {height: 80px;}
+  50%  {height: 60px;}
+  100% {height:65;}
+}
+
+.banner:hover{
+  cursor: pointer;
+  opacity: 50%;
+  animation-name: peek;
+  animation-duration: .9s;
+}
+
+.circle {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden; 
+}
+
+.SRfullSize {
+  display: none;
+  width: auto; 
+  max-height: 500px;
+}
+
+.shirtCommFS {
+  display: none;
+  width: auto; 
+  max-height: 500px;
+}
+
+.posterFS {
+  display: none;
+  width: auto; 
+  max-height: 500px;
+}
+
+#SRfull01 {
+  display: flex;
+}
+
+.thumbnailShrt {
+  display: none;
+  height: 50px;
+  width: 50px;
+  margin: 2px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.thumbnailPstr {
+  display: none;
+  height: 50px;
+  width: 50px;
+  margin: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+
+a:visited {
+  color: #773215;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d5693c;
+  background-color: transparent;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.description {
+  display: none;
+  color:#774777;
+  background-color: gainsboro;
+  align-items: center;
+  justify-content: center;
+  max-width: 750px;
+  height: auto;
+  border-radius: 15px 15px 15px 15px;
+  margin: 8px;
+  padding: 10px;
+  overflow: auto;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+
+.SRcaption {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  height: auto;
+  margin: 18px 8px 8px;
+  overflow: auto;
+  font-family: 'Quicksand', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+
+}
+
+.commCaption {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  height: auto;
+  margin: 18px 8px 8px;
+  overflow: auto;
+  font-family: 'Quicksand', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+
+}
+
+.postCaption {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  height: auto;
+  margin: 18px 8px 8px;
+  overflow: auto;
+  font-family: 'Quicksand', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+
+}
+
+#SRcap01 {
+  display: flex;
+}
