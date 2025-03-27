@@ -1,0 +1,15 @@
+:root {
+                --lgreen: #f8fce1;
+                --green: #626941;
+                --dgreen: #3b5022;
+                --lorange: #ff8300;
+                --orange: #c86100;
+                --lyellow: #fff8ce;
+                --yellow: #ffd444;
+                --lbrown: #a78348;
+                --brown: #7c4201;
+                --pink: pink;
+            }
+            body{
+                font-family:'franklin gothic medium';
+            }
