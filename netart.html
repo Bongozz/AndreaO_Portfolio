@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Net.Art!!</title>
     <link rel="icon" type="image/x-icon" href="images/heart.gif">
-    <link href="main.css" rel="stylesheet" type="text/css">
-    <link href="landing.css" rel="stylesheet" type="text/css">
-</head>
 
     <style>
-        /* Sidebar styles */
+        /* Root variables */
+        :root {
+            --lgreen: #f8fce1;
+            --green: #626941;
+            --dgreen: #3b5022;
+            --lorange: #ff8300;
+            --orange: #c86100;
+            --lyellow: #fff8ce;
+            --yellow: #ffd444;
+            --lbrown: #a78348;
+            --brown: #7c4201;
+            --pink: pink;
+        }
+
+        /* Global Styles */
+        body {
+            background: url(https://i.pinimg.com/736x/04/5a/af/045aaf0c77c3231dbaa9f44e8697f01f.jpg);
+            font-family: 'franklin gothic medium';
+        }
+
+        /* Sidebar Styles */
         .sidenav {
             height: 100%;
             width: 200px;
@@ -36,17 +53,122 @@
             background-color: #575757;
         }
 
+        /* Main Content Styles */
         .main {
-            margin-left: 220px; /* Adjust content to make space for the sidebar */
+            margin-left: 220px;
             padding: 20px;
             max-width: 800px;
         }
 
-        .content-wrapper {
+        .container {
+            width: 999px;
+            margin: 0 auto;
+            background: var(--lgreen);
+            height: 500px;
+            margin-top: 10em;
+            padding: 10px;
+            border: dashed #ffacbb 2px;
+            border-radius: 10px;
+            outline: 5px white solid;
+            box-shadow: 0px 5px 10px #ad5d0b, 5px -1px 5px #ad5d0b;
+            text-align: center;
+        }
+
+        .side {
+            width: 40%;
+            height: 100%;
+            float: left;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-style: italic;
+            color: var(--yellow);
+            text-shadow: 2px 1px 1px #a78348, 1px -2px 0 #a78348, -1px 1px 0 #a78348, -1px -1px 0 #a78348, 1px 0px 0 #a78348, 0px 2px 0 #a78348, -2px 0px 0 #a78348, 0px -2px 0 #a78348, 2px 2px 2px #dd658bff;
+        }
+
+        .inner {
+            height: 93%;
+            width: 59%;
+            float: right;
+            border-top: 1px hotpink dashed;
+            border-bottom: 1px hotpink dashed;
+            margin-top: -2px;
+        }
+
+        p {
+            color: var(--brown);
+            font-size: 1.1em;
+        }
+
+        .border {
+            width: 100%;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 1060px) {
+            .container {
+                width: 98%;
+                outline: none;
+                box-shadow: none;
+                border: 1px solid #ffacbb;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .side {
+                display: none;
+            }
+
+            .container {
+                height: fit-content;
+                width: 90%;
+            }
+
+            .inner {
+                width: 100%;
+                display: block;
+                float: none;
+            }
+
+            .sides {
+                flex-wrap: wrap;
+            }
+
+            .left, .right {
+                width: 100%;
+            }
+        }
+
+        /* Custom styles */
+        .thing {
+            width: 100%;
+            height: 200px;
+        }
+
+        .sides {
             display: flex;
-            gap: 1rem;
-            align-items: flex-start;
-            flex-direction: column; /* Ensure content is stacked vertically */
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .left, .right {
+            width: 100%;
+        }
+
+        .left p, .right p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #ff2893;
+        }
+
+        .left a {
+            color: #3a9511;
         }
     </style>
 </head>
@@ -71,23 +193,18 @@
             <img class="side" src="spacetimephoto.png">
             <h1>Net.art! </h1>
             <div class="inner">
-                <p>Space Time<I>!!</I> 
+                <p>Space Time<I>!!</I>
                     <br>
-                    For my Net.art I took a lot of inspiration from different visual novels that have an insane amount of choices for the player to choose. As for the plot, Space Time allows the user to embark on a short but rewarding adventure trying to help find an alien's pet. Along the way, there are comedic bits found throughout the course of the search while simultaneously learning how to be kind to others! 
+                    For my Net.art I took a lot of inspiration from different visual novels that have an insane amount of choices for the player to choose. As for the plot, Space Time allows the user to embark on a short but rewarding adventure trying to help find an alien's pet. Along the way, there are comedic bits found throughout the course of the search while simultaneously learning how to be kind to others!
                 </p>
                 <img class="border" src="https://sugarfantasies.neocities.org/images/border.png">
-                <img style="width:60%; margin:0 auto;" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnZtanN1ZWhscHR2dTZsbzJmeDI5b3hvNGZvbGxxOXZ1N2x1YXNlbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/GwSkbpFBjXUWz6Jom7/giphy.gif">
+                <img style="width:30%; margin:0 auto;" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnZtanN1ZWhscHR2dTZsbzJmeDI5b3hvNGZvbGxxOXZ1N2x1YXNlbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/GwSkbpFBjXUWz6Jom7/giphy.gif">
                 <h2><a href="https://bongozz.github.io/SpaceTime/"> Play Here!</a></h2>
             </div>
         </div>
-        <br>
-        <center>
-        </center>
     </div>
+
+    <script>NekoType="ghetto"</script>
+    <h1 id="nl"><script src="https://webneko.net/n20171213.js"></script><a href="https://webneko.net">Neko</a></h1>
 </body>
-     <script>NekoType="ghetto"</script>
-<h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
-href="https://webneko.net">Neko</a></h1>
 </html>
-
-
