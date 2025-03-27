@@ -1,0 +1,101 @@
+body{
+                background:url(https://i.pinimg.com/736x/04/5a/af/045aaf0c77c3231dbaa9f44e8697f01f.jpg);
+                font-family:'franklin gothic medium';
+            }
+            
+            .container{
+                width:999px;
+                margin:0 auto;
+                background:var(--lgreen);
+                height:500px;
+                margin-top:10em;
+                padding:10px;
+                border: dashed #ffacbb 2px;
+                border-radius:10px;
+                outline:5px white solid;
+                  box-shadow: 0px 5px 10px  #ad5d0b, 5px -1px 5px #ad5d0b;
+                font-family:'franklin gothic medium';
+                text-align: center;
+            }
+            .side{
+                width:40%;
+                height:100%;
+                float:left;
+            }
+            h1{
+                margin:0;
+                padding:0;
+                text-align: center;
+                font-style: italic;
+                color:var(--yellow);
+                      text-shadow: 2px 1px 1px #a78348, 1px -2px 0 #a78348, -1px 1px 0 #a78348, -1px -1px 0 #a78348, 1px 0px 0 #a78348, 0px 2px 0 #a78348, -2px 0px 0 #a78348, 0px -2px 0 #a78348, 2px 2px 2px #dd658bff;
+            }
+            .inner{
+                height:93%;
+                width:59%;
+                float:right;
+                  border-top:1px hotpink dashed;
+                border-bottom:1px hotpink dashed;
+                margin-top:-2px;
+            }
+            @media (max-width: 1060px) {
+                .container{
+                    width:98%;
+                    outline:none;
+                    box-shadow:none;
+                    border:1px solid #ffacbb;
+                }
+            }
+            @media (max-width: 800px) {
+                .side{
+                    display:none;
+                }
+                .container{
+                    height:fit-content;
+                    width:90%;
+                }
+                .inner{
+                    width:100%;
+                    display:block;
+                    float:none;
+                }
+                .sides{
+                  
+                flex-wrap:wrap;}
+                .left , .right{
+                  width:100%;
+                }
+            }
+            p{
+                color:var(--brown);
+                font-size: 1.1em;
+            }
+            .border{
+                width:100%;
+            }
+            .thing{
+                width:100%;
+                height:200px;
+            }
+            .sides{
+                display: flex;
+                justify-content: center;
+                gap:5px;
+            }
+            .left{
+                width:100%;
+                
+            }
+            .right{
+                width:100%;
+            }
+            .left p, .right p{
+                margin:0;
+                padding:0;
+            }
+            a{
+                color:#ff2893;
+            }
+            .left a {
+                color:#3a9511;
+            }
