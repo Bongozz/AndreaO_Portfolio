@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&amp;display=swap" rel="stylesheet">
-  <link href="https://bridget.party/style2.css" rel="stylesheet" type="text/css" media="all">
   <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-vector/20220829/ourmid/pngtree-pixel-art-ufo-icon-design-vector-png-image_6125116.png">
 
   <style>
@@ -39,6 +38,132 @@
       margin-left: 220px;
       padding: 20px;
     }
+   :root { 
+      --border-color: #ff928b;
+      --border-size: 3px;
+      --negative-border: calc(-1 * var(--border-size));
+      --bg-color: #fdc9c9;
+      --nav-width: 176px;
+      --wrapper-width: 895px;
+      --scrollbar-fg: #ff928b;
+      --scrollbar-bg: #fdc9c9;
+    }
+
+    * {
+      scrollbar-color: var(--scrollbar-fg) var(--scrollbar-bg); /* Firefox */
+    }
+
+    html, body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      font-family: ms gothic, courier;
+    }
+
+    .door {
+      position: relative;
+      display: inline-block;
+      cursor: url("https://bridget.neocities.org/cursor2.png"), auto;
+    }
+
+    .door .door-top {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      cursor: url("https://bridget.neocities.org/cursor2.png"), auto;
+    }
+
+    .door:hover .door-top {
+      display: inline;
+    }
+
+    body {
+      background-image: url("https://cdna.artstation.com/p/assets/images/images/007/608/132/large/raffaele-de-riso-19956973-2306724612886070-587350263915835450-o.jpg?1507294383");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Courier Prime', monospace;
+      color: white;
+      min-height: 100%;
+    }
+
+    footer, nav {
+      padding: 10px;
+      background-color: var(--bg-color);
+      font-family: ms gothic, courier;
+    }
+
+    main {
+      padding: 10px;
+      border-bottom: var(--border-size) solid var(--border-color);
+      background-color: #f000;
+      margin-left: var(--nav-width);
+      border-left: var(--border-size) solid var(--border-color);
+      font-family: ms gothic, courier;
+    }
+
+    #wrapper {
+      width: var(--wrapper-width);
+      margin: 0 auto;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding-left: 0;
+    }
+
+    nav li {
+      border: var(--border-size) solid var(--border-color);
+      margin: var(--negative-border) -3px;
+      padding: 5px 10px;
+      background-color: #f7b7b4;
+    }
+
+    a:link, a:visited, a:hover {
+      cursor: url("https://bridget.neocities.org/cursor2.png"), auto;
+      color: white;
+      text-decoration: none;
+    }
+
+    #art {
+      display: flex;
+      margin: 0;
+    }
+
+    #art .column {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: 0;
+    }
+
+    #art img {
+      width: 96%;
+      margin: 2%;
+    }
+
+    .hoverimage {
+      
+    }
+
+    /* Scrollbar styles for Chrome/Edge/Safari */
+    *::-webkit-scrollbar-track {
+      background: var(--scrollbar-bg);
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: var(--scrollbar-fg);
+    }
+
+    /* Other elements like draggable boxes, music array, mouse trails, etc.
+       were omitted for brevity but can be re-included if needed */
+
+  </style>
+</head>
   </style>
 </head>
 
@@ -78,16 +203,17 @@
         <img src="https://bridget.party/rainbowstarshort.gif" width="121" height="15">
 
         <font size="3"><p style="margin-top: 0px;padding-left: 10px;"><br>
-         I wanted to model the charcater I have been using throughout the course of Art74! She has gone through many diffrent itarations over the year but I'm very sataisfied with how she turned out!
+         I wanted to model the charcater I have been using throughout the course of Art74! She has gone through many diffrent itarations over the year but I'm very sataisfied with how she turned out! I also added her little pet that was introduced in the Net Art project!!!!
         </p></font>
 
         <div id="art">
           <div class="column">
-            <a href="3Dtemmodel.png"><img src="3Dtemmodel.png" class="hoverimage"></a>
-            <a href="IMG_6969.jpeg"><img src="IMG_6969.jpeg" class="hoverimage"></a>
+            <a href="alien1.jpeg"><img src="alien1.jpeg" class="hoverimage"></a>
+            <a href="alien2.jpeg"><img src="alien2.jpeg" class="hoverimage"></a>
           </div>
           <div class="column">
-            <a href="IMG_6970.jpeg"><img src="IMG_6970.jpeg" class="hoverimage"></a>
+            <a href="alien3.jpeg"><img src="alien3.jpeg" class="hoverimage"></a>
+            <a href="alien4.jpeg"><img src="alien4.jpeg" class="hoverimage"></a>
           </div>
         </div>
       </main>
